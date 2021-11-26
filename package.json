@@ -1,0 +1,17 @@
+{
+  "name": "opaque-vk",
+  "author": "https://github.com/Jencansee",
+  "repository": "https://github.com/Jencansee/opaque-vk",
+  "description": "Dark theme for vk.com",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.5"
+  }
+}
