@@ -1,11 +1,15 @@
 $accent: #C29171;
 $accent-weak: #695850;
+$accent-weak-hover: #A4918A;
 
 $main-bg: #1A1A1A;
 $black: #171717;
 $black2: #212121;
 $black3: #2B2B2B;
+
 $gray: #3B3B3B;
+$lighter-gray: #919191;
+$light-gray: #C2C2C2;
 
 $white: #fafafa;
 $white-weak: #f9f9f9;
@@ -15,59 +19,73 @@ $backdrop: rgba(54, 52, 52);
 
 //* assignments
 :root {    
-  --backdrop: $backdrop;
+  --backdrop: #{$backdrop};
   
   //? dark colors
-  --steel_gray_80: $main-bg;
-  --black_alpha40: $main-bg;
-  --background_page: $main-bg;
-  --field_background: $main-bg;
-  --separator_common: $main-bg;
-  --header_background: $main-bg;
-  --separator_alternate: $main-bg;
-  --button_secondary_background: $main-bg;
+  --steel_gray_80: #{$main-bg};
+  --black_alpha40: #{$main-bg};
+  --background_page: #{$main-bg};
+  --field_background: #{$main-bg};
+  --separator_common: #{$main-bg};
+  --header_background: #{$main-bg};
+  --loader_background: #{$main-bg};
+  --snippet_background: #{$main-bg};
+  --separator_alternate: #{$main-bg};
+  --button_secondary_background: #{$main-bg};
 
+  --content_tint_background: #{$black};
+  --search_bar_field_background: #{$black};
+  --header_search_field_background: #{$gray};
 
-  --content_tint_background: $black;
-  --search_bar_field_background: $black;
+  --light_blue_100: #{$black2};
+  --steel_gray_140: #{$black2};
+  --background_light: #{$black2};
+  --background_content: #{$black2};
+  --button_muted_background: #{$black2};
 
-  --light_blue_100: $black2;
-  --steel_gray_140: $black2;
-  --background_light: $black2;
-  --background_content: $black2;
-  --button_muted_background: $black2;
-
-  --steel_gray_40: $black3;
-  --modal_card_background: $black3;
-  --counter_secondary_background: $black3;
-  --button-secondary-background-color: $black3;
-  
-  --placeholder_icon_background: $gray;
-
+  --steel_gray_40: #{$black3};
+  --modal_card_background: #{$black3};
+  --counter_secondary_background: #{$black3};
+  --button-secondary-background-color: #{$black3};
+  --button-secondary-background-color-hover: #{$black3};
 
   //? accent
-  --button_primary_background: $accent;
-  --text_link: $accent;
-  --accent: $accent;
-  --blue_bright: $accent;
-  --sky_100: $accent;
-  --sky_200: $accent;
-  --im_text_name: $accent;
-  --action_sheet_action_foreground: $accent;
-  --button_tertiary_foreground: $accent;
-
-  --blue_400: $accent-weak;
-  --blue_420: $accent-weak;
-  --input_border: $accent-weak;
-  --im_forward_line_tint: $accent-weak;
-  --button-background-color:$accent-weak;
+  --button_primary_background: #{$accent};
+  --text_link: #{$accent};
+  --accent: #{$accent};
+  --blue_bright: #{$accent};
+  --sky_100: #{$accent};
+  --sky_200: #{$accent};
+  --im_text_name: #{$accent};
+  --action_sheet_action_foreground: #{$accent};
+  --button_tertiary_foreground: #{$accent};
+  
+  //? accent-weak
+  --blue_400: #{$accent-weak};
+  --blue_420: #{$accent-weak};
+  --input_border: #{$accent-weak};
+  --icon_tertiary: #{$accent-weak};
+  --light_blue_400: #{$accent-weak};
+  --im_forward_line_tint: #{$accent-weak};
+  --button-background-color: #{$accent-weak};
+  --light_blue_40: #{$accent-weak-hover};
 
   //? white
-  --black: $white;
-  --header_text: $white;
-  --text_primary: $white;
-  --icon_medium_alpha: $white;
+  --black: #{$white};
+  --header_text: #{$white};
+  --text_primary: #{$white};
+  --icon_medium_alpha: #{$white};
     
-  --gray_800: $white-weak;    
-  --gray_900: $white-weak;
+  --gray_800: #{$white-weak};    
+  --gray_900: #{$white-weak};
+  
+  //? gray
+  --blue_600: #{$gray};
+  --loader_track_fill: #{$gray};
+  --placeholder_icon_background: #{$gray};
+  
+  --steel_gray_A540: #{$light-gray};
+  --text_name: #{$light-gray};
+  --light_blue_700: #{$lighter-gray};
+  --text_subhead: #{$lighter-gray};
 }

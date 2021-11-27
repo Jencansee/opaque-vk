@@ -1,91 +1,90 @@
-@use './vars.scss';
-
-.vkuiCustomSelectOption { background-color: var(--field_background); }
-.vkuiCustomSelectOption--hover { background-color: var(--button_muted_background); }
-
-/* messenger counter */
-#l_msg .inl_bl.left_count {
-    color: var(--gray_800);    
-}
-
-/* backdrop */
-[dir] #layer_bg, [dir] .Videoview #layer_bg {
-    background: var(--backdrop);
-}
-
-/* video container bg fix  */
-[dir] .videoplayer, [dir] .VideoRecomsItem, [dir] .mv_playlist {
-    background: var(--background_page);
-}
-
-/* video recommendation */
-[dir] .VideoRecomsItem.VideoRecomsItem--active,
-[dir] .VideoRecomsItem:hover {
-    background-color: var(--steel_gray_40);
-}
-
-/* video color */
-.VideoRecomsItem__title, .videoplayer_controls_item,
-.mv_playlist .mv_playlist_header .mv_playlist_header_title,
-.videoplayer_end_info_title,
-/* post pull colors */ 
-.media_voting_bg_photo .media_voting_question
-{
-    color: var(--black);
-}
-
-.videoplayer_end_actions._large ._like,
-.videoplayer_end_actions._large ._share,
-.videoplayer_end_info_author_link, .media_voting_bg_photo .media_voting_option_percent, .media_voting_bg_photo .media_voting_option_text {
-    color: var(--gray_800);
-}
-
-[dir] .media_voting_bg_photo .media_voting_option_wrap .media_voting_option_bar {
-    background: #a5785b;
-}
-
-[dir] .media_voting_bg_photo .media_voting_option_wrap.media_voting_option_leader .media_voting_option_bar {
-    background: var(--accent);
-}
-
-/* image footer fix */
-.pv_bottom_info { background: var(--background_page); }
-
-/* dim post images */
-.page_post_thumb_wrap.image_cover { filter: brightness(0.8); }
-
-/* adblocking */
-div[data-ad-block-uid], .ReplyBoxDonut, .feed_section_coronavirus,
-.apps_feedRightAppsBlock,
-.page_module_upload[href="/albums189932671"] { display: none; }
+@import './vars.scss';
+@import './other/disable.scss';
+@import './other/improvements.scss';
 
 body { --page-block-shadow: 0 0 0 1px #1a1a1a; }
 
+//? backdrop
+[dir] #layer_bg, [dir] .Videoview #layer_bg {
+  background: var(--backdrop);
+}
 
-/* attached document label */
+//? video container bg fix
+[dir] .videoplayer, [dir] .VideoRecomsItem, [dir] .mv_playlist {
+  background: var(--background_page);
+}
+
+//? video recommendation
+[dir] .VideoRecomsItem.VideoRecomsItem--active,
+[dir] .VideoRecomsItem:hover
+{ background-color: var(--steel_gray_40); }
+
+//? video color
+.VideoRecomsItem__title, .videoplayer_controls_item,
+.mv_playlist .mv_playlist_header .mv_playlist_header_title,
+.videoplayer_end_info_title,
+//? post pull colors
+.media_voting_bg_photo .media_voting_question
+{ color: var(--black); }
+
+.videoplayer_end_actions._large ._like,
+.videoplayer_end_actions._large ._share,
+.videoplayer_end_info_author_link, 
+.media_voting_bg_photo .media_voting_option_percent, 
+.media_voting_bg_photo .media_voting_option_text,
+//? messenger counter
+#l_msg .inl_bl.left_count
+{ color: var(--gray_800); }
+
+//? corner messenger
+[dir] .fc_tab_head { background-color: var(--blue_400); border-bottom-color: var(--blue_400);}
+[dir] #fc_contacts, [dir] div.fc_clist_filter_wrap { background-color: $black; }
+.fc_contact_name { color: var(--light_blue_700); }
+
+
+[dir] .media_voting_bg_photo .media_voting_option_wrap .media_voting_option_bar 
+{ background: #a5785b; }
+
+[dir] .media_voting_bg_photo .media_voting_option_wrap.media_voting_option_leader .media_voting_option_bar 
+{ background: var(--accent); }
+
+//? image footer fix
+.pv_bottom_info { background: var(--background_page); }
+//? image wrap background
+.pv_img_area_wrap { background-color: $black2; }
+
+//? attached document label
 .post_doc_thumb_label_content {
-    color: var(--accent); opacity: .85;
+  color: var(--accent); opacity: .85;
 }
 
-/* messages mobile icon fix */
+//? messages mobile icon fix
 [dir] .nim-dialog:not(.nim-dialog_deleted):hover .nim-dialog--photo .online.mobile::after {
-    background-color: var(--steel_gray_40);
-    border-color: var(--steel_gray_40);
+  background-color: var(--steel_gray_40);
+  border-color: var(--steel_gray_40);
 }
 
-.TopHomeLink svg path:first-child {
-    fill: #1A1A1A;
-}
+.TopHomeLink svg path:first-child { fill: #1A1A1A; }
 
 .LeftMenu__icon svg path:not(#message_outline_20__Shape), 
 .LeftMenu__icon svg path:not(#phone_outline_20__phone_outline_20:first-child()){
-    fill: #A98347;
+  fill: #A98347;
 }
 
 .LeftMenu__icon #music_outline_20__music_outline_20 path:first-child {
-    fill: none;
+  fill: none;
 }
 
+//? new account menu 
+.vkuiCustomSelectOption { background-color: var(--field_background); }
+.vkuiCustomSelectOption--hover { background-color: var(--button_muted_background); }
 
-/* new account menu */
-#react_rootEcosystemAccountMenuEntry a svg { opacity: .2; }
+//? menu item settings
+[dir] .olist_item_wrap .olist_checkbox { border-radius: 50%; background-color: $black2; }
+[dir] .olist_item_wrap_on .olist_checkbox { filter: invert(1); background-color: transparent; }
+
+//? Following 
+[dir] .box_body { background-color: $black; }
+.fans_idol_lnk {
+  color: $accent-weak;
+}

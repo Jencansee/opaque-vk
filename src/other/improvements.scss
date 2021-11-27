@@ -1,0 +1,43 @@
+//? dim post images
+.page_post_thumb_wrap.image_cover { filter: brightness(0.8); }
+
+//? nav header new account menu
+#react_rootEcosystemAccountMenuEntry a svg { opacity: .2; }
+
+//? search fields
+input.ui_search_field { background-color: $black2 !important; }
+
+
+
+//! Grayscaling
+//? profile warning
+[dir] .profile_warning_img,
+[dir] .chat_onl::after,
+[dir] input.ui_search_field,
+[dir] .ts_contact_status,
+//? interesting at the top btn
+[dir] .ui_toggler_wrap.hot,
+//? Go up arrow
+[dir] #stl_text,
+[dir] .audio_page_player2 .audio_page_player__cover,
+//? inside of corner messenger, while hovering on person icon
+[dir] .fc_contact_over:hover .fc_contact_status
+{ filter: grayscale(1); }
+
+//! Inverts
+//? bookmark star on attached links
+[dir] .page_media_link__bookmark_button,
+//? blue png icons
+[dir="ltr"] .left_settings_inner,
+//? message icon
+[dir] .page_photo.page_action_menu_groups .page_actions_item.group_send_msg_status_block::before, 
+[dir] .audio_row .audio_row__play_btn,
+//? audio prev&next btn icons
+[dir] .audio_page_player2 .audio_page_player_next .icon, 
+[dir] .audio_page_player2 .audio_page_player_prev .icon,
+//? add file and story btn - left side in community when admin
+[dir] .narrow_redesign .stories_groups_block_stories_empty .page_upload_label,
+[dir] .narrow_redesign .page_block_groups .page_upload_label.page_docs_upload,
+//? create event - discussion board
+[dir] .wide_column .page_upload_label
+{ filter: invert(1); }
