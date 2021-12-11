@@ -21,7 +21,15 @@ input.ui_search_field { background-color: $black2 !important; }
 [dir] #stl_text,
 [dir] .audio_page_player2 .audio_page_player__cover,
 //? inside of corner messenger, while hovering on person icon
-[dir] .fc_contact_over:hover .fc_contact_status
+[dir] .fc_contact_over:hover .fc_contact_status,
+//? icons inside the chat - attach file, attach photo, emoji, voice
+[dir] .ms_items_more_wrap.ms_items_more_wrap_vector .ms_item_more_label,
+[dir] .im-chat-input .im-chat-input--attach-label,
+[dir] .emoji_smile_icon_vector, 
+[dir] .im-send-btn::before, [dir] .im-send-btn::after,
+//? top of the chat
+.im-action::before, [dir] .im-page--header-more .ui_actions_menu_icons, 
+[dir] .im-page--header-icon_search::before, [dir] .im-page--back-btn
 { filter: grayscale(1); }
 
 //! Inverts

@@ -59,6 +59,7 @@ $backdrop: rgba(54, 52, 52);
   --im_text_name: #{$accent};
   --action_sheet_action_foreground: #{$accent};
   --button_tertiary_foreground: #{$accent};
+  --icon_outline_medium: #{$accent};
   
   //? accent-weak
   --blue_400: #{$accent-weak};
@@ -88,4 +89,5 @@ $backdrop: rgba(54, 52, 52);
   --text_name: #{$light-gray};
   --light_blue_700: #{$lighter-gray};
   --text_subhead: #{$lighter-gray};
+  --placeholder_icon_foreground_secondary: #{$lighter-gray};
 }
