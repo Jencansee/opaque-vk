@@ -47,5 +47,7 @@ input.ui_search_field { background-color: $black2 !important; }
 [dir] .narrow_redesign .stories_groups_block_stories_empty .page_upload_label,
 [dir] .narrow_redesign .page_block_groups .page_upload_label.page_docs_upload,
 //? create event - discussion board
-[dir] .wide_column .page_upload_label
+[dir] .wide_column .page_upload_label,
+//? friendlist group (family, bbf, collegues)
+.friends_lists .friends_lists_group
 { filter: invert(1); }

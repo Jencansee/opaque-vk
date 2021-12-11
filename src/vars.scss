@@ -44,6 +44,7 @@ $backdrop: rgba(54, 52, 52);
   --button_muted_background: #{$black2};
 
   --steel_gray_40: #{$black3};
+  --input_background: #{$black3};
   --modal_card_background: #{$black3};
   --counter_secondary_background: #{$black3};
   --button-secondary-background-color: #{$black3};
@@ -64,6 +65,7 @@ $backdrop: rgba(54, 52, 52);
   //? accent-weak
   --blue_400: #{$accent-weak};
   --blue_420: #{$accent-weak};
+  --field_border: #{$accent-weak};
   --input_border: #{$accent-weak};
   --icon_tertiary: #{$accent-weak};
   --light_blue_400: #{$accent-weak};
@@ -85,9 +87,11 @@ $backdrop: rgba(54, 52, 52);
   --loader_track_fill: #{$gray};
   --placeholder_icon_background: #{$gray};
   
-  --steel_gray_A540: #{$light-gray};
   --text_name: #{$light-gray};
-  --light_blue_700: #{$lighter-gray};
+  --steel_gray_A540: #{$light-gray};
+  
+  --icon_medium: #{$lighter-gray};
   --text_subhead: #{$lighter-gray};
+  --light_blue_700: #{$lighter-gray};
   --placeholder_icon_foreground_secondary: #{$lighter-gray};
 }
