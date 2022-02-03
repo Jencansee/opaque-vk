@@ -5,7 +5,7 @@
   "description": "Dark theme for vk.com",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf ./dist",
+    "clean": "rm -rf ./prod",
     "build": "npm run clean && gulp build"
   },
   "devDependencies": {
