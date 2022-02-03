@@ -10,7 +10,7 @@ body { --page-block-shadow: 0 0 0 1px #1a1a1a; }
 }
 
 //? video container bg fix
-[dir] .videoplayer, [dir] .VideoRecomsItem, [dir] .mv_playlist {
+[dir] .videoplayer, [dir] .VideoRecomsItem, [dir] .mv_playlist, [dir] .mv_chat_reply_form {
   background: var(--background_page);
 }
 
@@ -74,6 +74,11 @@ body { --page-block-shadow: 0 0 0 1px #1a1a1a; }
 .LeftMenu__icon #music_outline_20__music_outline_20 path:first-child {
   fill: none;
 }
+
+[dir] .mv_chat_reply_form { border-color: var(--field_border); }
+[dir] .mv_chat { background-color: var(--background_content); }
+
+[dir] .stories_video, [dir] .stories_photo, [dir] .stories_preview, [dir] .stories_live, [dir] .stories_preview::after { background: var(--backdrop) center/cover; }
 
 //? new account menu 
 .vkuiCustomSelectOption { background-color: var(--field_background); }
